@@ -1,16 +1,14 @@
 # Slack Export Viewer
 
-A Slack Export archive viewer that allows you to easily view and share your 
-Slack team's export (instead of having to dive into hundreds of JSON files).
+The slack export viewer is a command line tool that lets you filter and render
+a slack export into text files for easy analysis and reading.
 
 ![Preview](screenshot.png)
 
 
 ## Overview
 
-`slack-export-viewer` is useful for small teams on a free Slack plan (limited to 10,000 messages) who overrun their budget and ocassionally need a nice interface to refer back to previous messages. You get a web interface to easily scroll through all channels in the export without having to look at individual JSON files per channel per day.
-
-`slack-export-viewer` can be used locally on one machine for yourself to explore an export or it can be run on a headless server (as it is a Flask web app) if you also want to serve the content to the rest of your team.
+`slack-export-viewer` is a useful tool for teams who are running a free slack instance, and might have to produce a report covering the conversations, or at least read it in a standard text browser
 
 
 ## Usage
@@ -35,7 +33,7 @@ If everything went well, your archive will have been extracted, processed, and b
 
 ## Installation
 
-I recommend [`pipsi`](https://github.com/mitsuhiko/pipsi) for a nice 
+I recommend [`pipsi`](https://github.com/mitsuhiko/pipsi) for a nice
 isolated install.
 
 ```bash
