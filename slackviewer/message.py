@@ -45,6 +45,11 @@ class Message(object):
         return str(datetime.datetime.fromtimestamp(tsepoch)).split('.')[0]
 
     @property
+    def datetime(self):
+        tsepoch = float(self._message["ts"].split(".")[0])
+        return datetime.datetime.fromtimestamp(tsepoch)
+
+    @property
     def msg(self):
         message = []
 
